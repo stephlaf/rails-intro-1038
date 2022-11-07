@@ -11,6 +11,12 @@
   </head>
 
   <body>
+    <div style="background: lightcoral; padding: 16px" >
+      A Navbar
+      <span><%= link_to 'Home 🏠', root_path %></span>
+      <span><%= link_to 'About Us 👯‍♂️', about_us_path %></span>
+      <span><%= link_to 'Contact ☎️', contact_path %></span>
+    </div>
     <%= yield %>
   </body>
 </html>

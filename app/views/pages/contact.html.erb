@@ -1,0 +1,21 @@
+<h1>Meet the team!</h1>
+
+<p>
+  The following will not be displayed: <% 'this will not be displayed' %>
+</p>
+<p>See, told you 😄</p>
+
+<p>
+  This will, though: <%= 'this will be displayed' %>
+</p>
+
+<form action="/contact" method="get">
+  <input type="text" name="query" placeholder="Who are you looking for?" value="<%= params[:query] %>">
+  <input type="submit">
+</form>
+
+<ul>
+  <% @members.each do |member| %>
+    <li><%= member %></li>
+  <% end %>
+</ul>
